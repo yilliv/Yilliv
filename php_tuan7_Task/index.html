@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/angular.min.js"></script>
+    </head>
+    <bo
+        
+        
+         <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <form class="form-horizontal text-center "  action="xlthemsp.php" method="post" >
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> 
+                                <h4 class="modal-title" id="myModalLabel">edit Product</h4>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table table-bordered mausam" style="margin:0">
+
+                                    <tr>
+                                    <input id="id" name="id"  type="hidden"  />
+
+                                    <th class="text-center">
+                                        Name
+
+                                        <input id="name" name="name" type="text" class="form-control" placeholder="typename" />
+
+                                    </th>
+                                    <th class="text-center">
+                                        Description 
+                                        <input id="des" name="des" type="text" class="form-control" placeholder="typename" />
+
+                                    </th>
+                                    <th class="text-center">
+                                        Price 
+                                        <input id="price" name="price" type="text" class="form-control" placeholder="typename" />
+
+                                    </th>
+                                    
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button"  class="btn btn-default cachtren" data-dismiss="modal">Close</button>
+                                <button type="submit" name="sm_edit" type="button" class="btn btn-primary cachtren"><span class="glyphicon glyphicon-off" /> Save changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+        
+    </body>
+    <script>
+        var app=angular.module("myApp",[]);
+        app.controller("myController",function($scope){
+            //len trong nay
+           
+            $scope.list=[{'id':'001','name':'Le van A'},{'id':'021','name':'Le van B'}];
+            
+        });
+    </script>
+</html>
